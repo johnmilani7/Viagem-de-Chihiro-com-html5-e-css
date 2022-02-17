@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+
+body{
+    /*background: linear-gradient(252.44deg, #1A1A1A 0%, #0A0A0A 100%);*/
+    background-size: 100%;
+    background: linear-gradient(154.76deg, #628E75 3%, #1A4855 84.12%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header{
+    width: 100%;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    }
+
+.element {
+    margin: 40px auto 80px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    }
+
+.logo{
+    width: 100px;
+    height: 49px;
+}
+
+
+.redesocial{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+
+}
+
+.redesocial li{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main{
+    width: 100%;
+}
+
+.element2{
+    margin: 0 auto 0 auto;
+    width: 80%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.hayao{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 14px 0px;
+    position: static;
+}
+
+.viagem{
+    position: static;
+    width: 405px;
+    height: 148px;
+    left: 0px;
+    top: 44px;
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 100%;
+    /* or 74px */
+    color: #F9F9F9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 14px 0px;
+}
+
+.chihiro{
+    width: 390px;
+    height: 87px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    color: #F9F9F9;
+    margin-top: -20px;
+}
+
+.img-chihiro img{
+    width: 500px;
+    height: 470px;
+    margin-top: -28px;
+
+}
+.element3{
+    width: 50.8%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 45px;
+    margin-top: 180px;
+    float: left;
+}
+
+.element4{
+    margin: 0 auto 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.element3 div{
+    transform: skewX(-21deg);
+    border: 2px solid #658E76;
+    margin-right: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.element3 div:hover{
+    background: #658E76;
+}
+
+.botao{
+    transform: skewX(21deg);
+    text-decoration: none;
+    color: #F9F9F9;
+    width: 225px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    text-transform: uppercase;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.botao:hover:before{
+    content:"";
+    background-image: url("../imgs/play.png");
+    background-repeat: no-repeat;
+    margin-right: 11px;
+    padding: 9.8px;
+    padding-top: -1.5px;
+}
+
+
+@media (max-width: 1236px){
+    .botao{
+        width: 200px;
+    }
+    .element3{
+        width: 460px;
+    }
+}
+
+@media (max-width: 1131px){
+
+    .element2{
+        height: 750px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -150px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .conteudo{
+        margin-top: -70px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-chihiro{
+        margin: 0 auto;
+    }
+
+    .element3 {
+        margin-top: 20px ;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .element3 div{
+        margin-top: 0;
+        height: 50px;
+        width: 230px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        display:flex;
+        align-items: center;
+        border: 2px solid #658E76;
+        background: #658E76;
+    }
+
+    .botao::before{
+        content:"";
+        background-image: url("../imgs/play.png");
+        background-repeat: no-repeat;
+        margin-right: 11px;
+        padding: 9.8px;
+        padding-top: -1.5px;
+    }
+
+    .element4{
+        width: 100%;
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 700px){
+    .element{
+        width: 90%;
+    }
+
+    .img-chihiro img{
+        width: 400px;
+        height: 380px;
+    }
+
+    .element2{
+        margin-top: -190px;
+    }
+}
+
+@media (max-width: 600px){
+    .img-chihiro img{
+        width: 100%;
+        height: 350px;
+    }
+    .element2{
+        margin-top: -200px;
+    }
+
+    .element4{
+        margin-top: -100px;
+    }
+    .element3{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 180px;
+    }
+
+    .element3 div{
+        margin-left: 40px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 440px){
+    .conteudo{
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .hayao{
+        font-size: 110%;
+    }
+
+    .viagem{
+        width: 100%;
+        font-size: 55px;
+    }
+
+    .chihiro{
+        width: 100%;
+    }
+}
+@media (max-width: 406px){
+    .viagem{
+        font-size: 50px;
+    }
+
+    .chihiro{
+        margin-top: -25px;
+    }
+
+    .conteudo{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .element3 div{
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+
+    
+}
+
+@media (max-width: 369px){
+    .chihiro{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 307px){
+    .viagem{
+        font-size: 45px;
+    }
+}
